@@ -188,3 +188,83 @@
 
     </div>
   
+  <!-- FORM KONTAK -->
+<section id="kontak" class="container py-5">
+    <h2 class="text-center mb-4">Kontak Saya</h2>
+
+    <form onsubmit="event.preventDefault();
+        document.getElementById('notifikasi').classList.remove('d-none');
+        this.reset();">
+
+        <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control"
+                   placeholder="Masukkan nama kamu"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control"
+                   placeholder="Masukkan email kamu"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4"
+                      placeholder="Tuliskan pesan kamu"
+                      required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Kirim Pesan
+        </button>
+
+        <!-- NOTIFIKASI BERHASIL -->
+        <div id="notifikasi"
+             class="alert alert-success alert-dismissible fade show mt-3 d-none"
+             role="alert">
+
+            <h5 class="alert-heading">✓ Pesan Berhasil!</h5>
+            <p class="mb-0">
+                Terima kasih sudah menghubungi saya.
+            </p>
+
+            <button type="button" class="btn-close"
+                    onclick="document.getElementById('notifikasi').classList.add('d-none')"
+                    aria-label="Tutup"></button>
+        </div>
+
+    </form>
+</section>
+</main>
+      <!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+
+        <h5>Dimas Profile</h5>
+        <p>Siswa Rekayasa Perangkat Lunak (RPL)</p>
+
+        
+        <p>
+            Media Sosial:
+            <a href="https://www.instagram.com/dimasptdi?vrfl=MWM1OW5uc3U0ZmFyMw==/"
+                class="text-warning">Instagram</a>
+        </p>
+
+        <hr>
+
+        <p class="mb-0">
+            &copy; 2026 M. Dimas Septiadi. XI RPL 3.
+        </p>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+    </html>
+      
+      
+
